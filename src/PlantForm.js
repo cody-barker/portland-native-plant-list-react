@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import AllPlants from './AllPlants'
 
 function PlantForm({allPlants, setAllPlants}) {
 
@@ -54,8 +53,6 @@ function PlantForm({allPlants, setAllPlants}) {
         .then(r => r.json())
         .then(plant => setAllPlants([...allPlants, plant]))
     }
-
-    console.log(allPlants)
 
     return(
         <form onSubmit={handleSubmit}>

@@ -1,13 +1,27 @@
-.navbar {
-  display: "inline-block";
-  width: "50px";
-  padding: "12px";
-  margin: "0 6px 6px";
-  background: "blue";
-  color: "white";
+#navbar {
+  background-color: #5c5c5c;
+  color:#ffffff;
+  font-weight:500
+}
+
+nav a{
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
 }
 
 nav a.active {
-  background-color: black;
-  color: white;
+  background-color: #00a7a7;
+}
+
+nav a:visited {
+  color:#ffffff;
+}
+
+body {
+  background-color: #ffffffa2;
+  color: #2c580f;
+  padding: 40px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
 }
