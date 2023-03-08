@@ -7,9 +7,10 @@ function Shrubs({allPlants}) {
     const shrubComps = shrubs.map(plant => <Plant plant={plant} key={plant.id}/>)
 
     return(
-        {shrubComps}
+        <div>
+            {shrubComps}
+        </div>
     )    
-    
 }
 
 export default Shrubs

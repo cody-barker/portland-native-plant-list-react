@@ -37,7 +37,7 @@ function App() {
         <Route path="/trees">
           <Trees allPlants={allPlants}/>
         </Route>
-        {/* <Route path="/shrubs">
+        <Route path="/shrubs">
           <Shrubs allPlants={allPlants}/>
         </Route>
         <Route path="/grasses">
@@ -48,7 +48,7 @@ function App() {
         </Route>
         <Route path="*">
           <h1>404 not found</h1>
-        </Route> */}
+        </Route>
       </Switch>
     </div>
   )
