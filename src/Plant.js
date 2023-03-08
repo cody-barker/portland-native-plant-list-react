@@ -1,6 +1,9 @@
 import React from 'react'
 
-function Trees({allPlants}) {
+function Plant({plant}) {
+
+    const {binomialName, commonName, type, height, moistureRequirement, lightRequirement} = plant
+
     return(
         <div className="plant-card">
             <h2>{binomialName}</h2>
@@ -13,4 +16,4 @@ function Trees({allPlants}) {
     )
 }
 
-export default Trees
+export default Plant

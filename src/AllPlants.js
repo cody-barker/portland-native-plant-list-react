@@ -1,8 +1,14 @@
 import React from 'react'
+import Plant from './Plant'
 
-function AllPlants() {
+function AllPlants({allPlants}) {
+
+    const allPlantsComps = allPlants.map(plant => <Plant plant={plant}/>)
+
     return(
-        'all plants'
+        <div>
+            {allPlantsComps}
+        </div>
     )
 }
 

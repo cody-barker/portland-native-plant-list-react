@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Grasses() {
+function Grasses(allPlants) {
     return(
         'grasses'
     )

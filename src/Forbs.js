@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Forbs() {
+function Forbs(allPlants) {
     return(
         'forbs'
     )

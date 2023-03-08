@@ -11,7 +11,6 @@ import Shrubs from './Shrubs'
 import Grasses from './Grasses'
 import Forbs from './Forbs'
 
-
 function App() {
 
   useEffect(() => {
@@ -33,19 +32,19 @@ function App() {
           <PlantForm allPlants={allPlants} setAllPlants={setAllPlants}/>
         </Route>
         <Route exact path="/allplants">
-          <AllPlants />
+          <AllPlants allPlants={allPlants}/>
         </Route>
         <Route path="/trees">
-          <Trees />
+          <Trees allPlants={allPlants}/>
         </Route>
         <Route path="/shrubs">
-          <Shrubs />
+          <Shrubs allPlants={allPlants}/>
         </Route>
         <Route path="/grasses">
-          <Grasses />
+          <Grasses allPlants={allPlants}/>
         </Route>
         <Route path="/forbs">
-          <Forbs />
+          <Forbs allPlants={allPlants}/>
         </Route>
         <Route path="*">
           <h1>404 not found</h1>
@@ -61,12 +60,12 @@ export default App;
 /**
  * App
  *    NavBar
- *      Home
- *      Plant Form
- *      All Plants
- *      Trees
- *      Shrubs
- *      Grasses
- *      Forbs
- *        Plant
+ *    Home
+ *    Plant Form
+ *    All Plants
+ *    Trees
+ *    Shrubs
+ *    Grasses
+ *    Forbs
+ *      Plant
  */

@@ -59,12 +59,12 @@ function PlantForm({allPlants, setAllPlants}) {
 
     return(
         <form onSubmit={handleSubmit}>
-            <input onChange={handleBinomialChange} type="text" name="binomialName" placeholder="BinomialName"></input>
-            <input onChange={handleCommonChange} type="text" name="commonName" placeholder="commonName"></input>
-            <input onChange={handleTypeChange} type="text" name="type" placeholder="type"></input>
-            <input onChange={handleHeightChange} type="text" name="height" placeholder="height"></input>
-            <input onChange={handleLightChange} type="text" name="lightRequirement" placeholder="lightRequirement"></input>
-            <input onChange={handleMoistureChange} type="text" name="moistureRequirement" placeholder="moistureRequirement"></input>
+            <input onChange={handleBinomialChange} type="text" name="binomialName" placeholder="Binomial Name"></input>
+            <input onChange={handleCommonChange} type="text" name="commonName" placeholder="A Common Name"></input>
+            <input onChange={handleTypeChange} type="text" name="type" placeholder="Type"></input>
+            <input onChange={handleHeightChange} type="text" name="height" placeholder="Height"></input>
+            <input onChange={handleLightChange} type="text" name="lightRequirement" placeholder="Light Requirement"></input>
+            <input onChange={handleMoistureChange} type="text" name="moistureRequirement" placeholder="Moisture Requirement"></input>
             <button type="submit">Submit</button>
         </form>
     )

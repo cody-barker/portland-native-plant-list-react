@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Shrubs() {
+function Shrubs(allPlants) {
     return(
         'shrubs'
     )
