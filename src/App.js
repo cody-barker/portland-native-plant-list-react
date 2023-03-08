@@ -9,7 +9,7 @@ import AllPlants from './AllPlants'
 import Trees from './Trees'
 import Shrubs from './Shrubs'
 import Grasses from './Grasses'
-import Forbs from './Forbs'
+import Herbs from './Herbs'
 
 function App() {
 
@@ -37,18 +37,18 @@ function App() {
         <Route path="/trees">
           <Trees allPlants={allPlants}/>
         </Route>
-        <Route path="/shrubs">
+        {/* <Route path="/shrubs">
           <Shrubs allPlants={allPlants}/>
         </Route>
         <Route path="/grasses">
           <Grasses allPlants={allPlants}/>
         </Route>
         <Route path="/forbs">
-          <Forbs allPlants={allPlants}/>
+          <Herbs allPlants={allPlants}/>
         </Route>
         <Route path="*">
           <h1>404 not found</h1>
-        </Route>
+        </Route> */}
       </Switch>
     </div>
   )
