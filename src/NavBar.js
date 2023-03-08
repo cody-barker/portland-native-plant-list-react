@@ -10,7 +10,7 @@ function NavBar() {
             <NavLink to="/trees">Trees</NavLink>
             <NavLink to="/shrubs">Shrubs</NavLink>
             <NavLink to="/grasses">Grasses</NavLink>
-            <NavLink to="/forbs">Forbs</NavLink>
+            <NavLink to="/herbs">Herbs</NavLink>
         </nav>
     )
 }

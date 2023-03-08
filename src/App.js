@@ -30,7 +30,7 @@ function App() {
         <Route path="/plantform">
           <PlantForm allPlants={allPlants} setAllPlants={setAllPlants}/>
         </Route>
-        <Route exact path="/allplants">
+        <Route path="/allplants">
           <AllPlants allPlants={allPlants}/>
         </Route>
         <Route path="/trees">
@@ -42,7 +42,7 @@ function App() {
         <Route path="/grasses">
           <Grasses allPlants={allPlants}/>
         </Route>
-        <Route path="/forbs">
+        <Route path="/herbs">
           <Herbs allPlants={allPlants}/>
         </Route>
         <Route path="*">
@@ -54,17 +54,3 @@ function App() {
 }
 
 export default App;
-
-
-/**
- * App
- *    NavBar
- *    Home
- *    Plant Form
- *    All Plants
- *    Trees
- *    Shrubs
- *    Grasses
- *    Forbs
- *      Plant
- */

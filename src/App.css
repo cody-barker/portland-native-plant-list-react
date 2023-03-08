@@ -9,6 +9,7 @@ nav a{
   display: inline-block;
   padding: 20px;
   text-decoration: none;
+  color: #ffffff
 }
 
 nav a.active {
