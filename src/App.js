@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Switch, Route } from "react-router-dom"
 import NavBar from './NavBar'
 import Home from './Home'
@@ -11,7 +11,17 @@ import Shrubs from './Shrubs'
 import Grasses from './Grasses'
 import Forbs from './Forbs'
 
+
 function App() {
+
+  useEffect(() => {
+    fetch('http://localhost:3001/plantList')
+    .then(r => r.json())
+    .then(list => setAllPlants(list))
+  }, [])
+
+  const [allPlants, setAllPlants] = useState([])
+
   return (
     <div>
       <NavBar />
@@ -20,7 +30,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/plantform">
-          <PlantForm />
+          <PlantForm allPlants={allPlants} setAllPlants={setAllPlants}/>
         </Route>
         <Route exact path="/allplants">
           <AllPlants />

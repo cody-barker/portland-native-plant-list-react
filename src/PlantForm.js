@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
+import AllPlants from './AllPlants'
 
-function PlantForm() {
+function PlantForm({allPlants, setAllPlants}) {
 
     const [binomialName, setBinomialName] = useState("")
     const [commonName, setCommonName] = useState("")
@@ -35,8 +36,26 @@ function PlantForm() {
 
     function handleSubmit(e) {
         e.preventDefault()
-        fetch('')
+        const newPlant = {
+            binomialName: binomialName,
+            commonName: commonName,
+            type: type,
+            height: height,
+            lightRequirement: lightRequirement,
+            moistureRequirement: moistureRequirement
+        }
+        fetch('http://localhost:3001/plantList', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newPlant)
+        })
+        .then(r => r.json())
+        .then(plant => setAllPlants([...allPlants, plant]))
     }
+
+    console.log(allPlants)
 
     return(
         <form onSubmit={handleSubmit}>
