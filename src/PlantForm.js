@@ -52,16 +52,25 @@ function PlantForm({allPlants, setAllPlants}) {
         })
         .then(r => r.json())
         .then(plant => setAllPlants([...allPlants, plant]))
+        .then(
+            setBinomialName(""),
+            setCommonName(""),
+            setType(""),
+            setHeight(""),
+            setLightRequirement(""),
+            setMoistureRequirement("")
+        )
     }
 
     return(
         <form onSubmit={handleSubmit}>
-            <input onChange={handleBinomialChange} type="text" name="binomialName" placeholder="Binomial Name"></input>
-            <input onChange={handleCommonChange} type="text" name="commonName" placeholder="A Common Name"></input>
-            <input onChange={handleTypeChange} type="text" name="type" placeholder="Type"></input>
-            <input onChange={handleHeightChange} type="text" name="height" placeholder="Height"></input>
-            <input onChange={handleLightChange} type="text" name="lightRequirement" placeholder="Light Requirement"></input>
-            <input onChange={handleMoistureChange} type="text" name="moistureRequirement" placeholder="Moisture Requirement"></input>
+            <h3>Submit a New Plant to the List</h3>
+            <input required onChange={handleBinomialChange} type="text" name="binomialName" placeholder="Binomial Name" value={binomialName}></input>
+            <input required onChange={handleCommonChange} type="text" name="commonName" placeholder="A Common Name" value={commonName}></input>
+            <input required onChange={handleTypeChange} type="text" name="type" placeholder="Type" value={type}></input>
+            <input required onChange={handleHeightChange} type="text" name="height" placeholder="Height" value={height}></input>
+            <input required onChange={handleLightChange} type="text" name="lightRequirement" placeholder="Light Requirement" value={lightRequirement}></input>
+            <input required onChange={handleMoistureChange} type="text" name="moistureRequirement" placeholder="Moisture Requirement" value={moistureRequirement}></input>
             <button type="submit">Submit</button>
         </form>
     )

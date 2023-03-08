@@ -6,7 +6,7 @@ function Plant({plant}) {
 
     return(
         <div className="plant-card">
-            <h2>{binomialName}</h2>
+            <h2 id="latin">{binomialName}</h2>
             <h3>{commonName}</h3>
             <p>Type: {type}</p>
             <p>Height: {height}</p>

@@ -21,7 +21,7 @@ function App() {
   const [allPlants, setAllPlants] = useState([])
 
   return (
-    <div>
+    <div className="app">
       <NavBar />
       <Switch>
         <Route exact path="/">

@@ -8,7 +8,7 @@ function Trees({allPlants}) {
 
 
     return(
-        <div className="plant-card">
+        <div>
             {treeComps}
         </div>
     )
