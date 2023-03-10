@@ -2078,6 +2078,15 @@
       "lightRequirement": "Full Sun",
       "moistureRequirement": "Wet",
       "id": 230
+    },
+    {
+      "binomialName": "Eleocharis obtusa",
+      "commonName": "Ovate Spikerush",
+      "type": "Herb",
+      "height": "2\"-10\"",
+      "lightRequirement": "Full Sun",
+      "moistureRequirement": "Moist, Wet",
+      "id": 231
     }
   ]
 }
