@@ -2060,6 +2060,15 @@
       "lightRequirement": "Full sun",
       "moistureRequirement": "Moist, Wet",
       "id": 228
+    },
+    {
+      "binomialName": "Beckmania syzigachne",
+      "commonName": "Slough Grass",
+      "type": "Grass",
+      "height": "8\"-36\"",
+      "lightRequirement": "Full Sun",
+      "moistureRequirement": "Wet",
+      "id": 229
     }
   ]
 }
