@@ -2051,6 +2051,15 @@
       "lightRequirement": "Full sun, part shade",
       "moistureRequirement": "Dry, Moist, Wet",
       "id": 227
+    },
+    {
+      "binomialName": "Alisma gramineum",
+      "commonName": "Narrow-leaved water plantain",
+      "type": "Herb",
+      "height": "20\"",
+      "lightRequirement": "Full sun",
+      "moistureRequirement": "Moist, Wet",
+      "id": 228
     }
   ]
 }
