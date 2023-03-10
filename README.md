@@ -9,6 +9,8 @@ The Portland Native Plant List is an expansive resource containing plants native
 All of the plants on this list could be suitable for backyard habitats and restoration projects alike.\
 The site allows you to add plants to the database and view them by type.
 
+<img src ="public/Phase-2-Project-README-GIF.gif" alt="app.gif">
+
 ## Available Scripts
 
 If you'd like to contribute to the database, you may fork this repo and submit your changes for approval to codybarker.or@gmail.com
