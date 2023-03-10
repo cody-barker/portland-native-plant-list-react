@@ -2024,6 +2024,15 @@
       "lightRequirement": "Full sun, part shade",
       "moistureRequirement": "Dry, Moist, Wet",
       "id": 224
+    },
+    {
+      "binomialName": "Populus tremuloides",
+      "commonName": "Quaking Aspen",
+      "type": "Tree",
+      "height": "20'-80'",
+      "lightRequirement": "Full sun, part shade",
+      "moistureRequirement": "Moist",
+      "id": 225
     }
   ]
 }
