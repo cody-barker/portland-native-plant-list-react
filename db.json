@@ -2096,6 +2096,15 @@
       "lightRequirement": "Full sun, part shade",
       "moistureRequirement": "Moist",
       "id": 232
+    },
+    {
+      "binomialName": "Equisetum hyemale",
+      "commonName": "Common Scouring–rush",
+      "type": "Herb",
+      "height": "3'-5'",
+      "lightRequirement": "Full sun, part shade",
+      "moistureRequirement": "Moist, Wet",
+      "id": 233
     }
   ]
 }
