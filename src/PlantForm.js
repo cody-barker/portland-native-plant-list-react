@@ -63,7 +63,7 @@ function PlantForm({allPlants, setAllPlants}) {
     }
 
     return(
-        <form onSubmit={handleSubmit}>
+        <form autocomplete="off" onSubmit={handleSubmit}>
             <h3>Submit a New Plant to the List</h3>
             <input required onChange={handleBinomialChange} type="text" name="binomialName" placeholder="Binomial Name" value={binomialName}></input>
             <input required onChange={handleCommonChange} type="text" name="commonName" placeholder="A Common Name" value={commonName}></input>
