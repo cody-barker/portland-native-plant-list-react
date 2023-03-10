@@ -2069,6 +2069,15 @@
       "lightRequirement": "Full Sun",
       "moistureRequirement": "Wet",
       "id": 229
+    },
+    {
+      "binomialName": "Downingia elegans",
+      "commonName": "Common Downingia",
+      "type": "Herb",
+      "height": "2\"-12\"",
+      "lightRequirement": "Full Sun",
+      "moistureRequirement": "Wet",
+      "id": 230
     }
   ]
 }
