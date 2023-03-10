@@ -2015,6 +2015,15 @@
       "lightRequirement": "Full sun, part shade",
       "moistureRequirement": "Moist",
       "id": 223
+    },
+    {
+      "binomialName": "Crataegus gaylussacia",
+      "commonName": "Suksdorf's hawthorn",
+      "type": "Tree",
+      "height": "2'0-35'",
+      "lightRequirement": "Full sun, part shade",
+      "moistureRequirement": "Dry, Moist, Wet",
+      "id": 224
     }
   ]
 }
