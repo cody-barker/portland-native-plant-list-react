@@ -2087,6 +2087,15 @@
       "lightRequirement": "Full Sun",
       "moistureRequirement": "Moist, Wet",
       "id": 231
+    },
+    {
+      "binomialName": "Equisetum arvense",
+      "commonName": "Common Horsetail",
+      "type": "Herb",
+      "height": "4\"-35\"",
+      "lightRequirement": "Full sun, part shade",
+      "moistureRequirement": "Moist",
+      "id": 232
     }
   ]
 }
