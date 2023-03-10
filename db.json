@@ -2042,6 +2042,15 @@
       "lightRequirement": "Full sun, part shade",
       "moistureRequirement": "Dry, Moist",
       "id": 226
+    },
+    {
+      "binomialName": "Agrostis scabra",
+      "commonName": "Rough Hairgrass",
+      "type": "Grass",
+      "height": "3.5'",
+      "lightRequirement": "Full sun, part shade",
+      "moistureRequirement": "Dry, Moist, Wet",
+      "id": 227
     }
   ]
 }
