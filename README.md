@@ -10,7 +10,7 @@ All of the plants on this list could be suitable for backyard habitats and resto
 The site allows you to add plants to the database and view them by type.
 
 <img src ="public/Phase-2-Project-README-GIF.gif" alt="app.gif">
-<a href="/home/cody/code/labs/phase-2/phase-2-project/my-app/public/Phase-2-Project-Video.mp4" alt=app.video>Click here for a more detailed video of the app features.</a>
+<a href="https://youtu.be/qwquisbZK-U" alt=app.video>Click here for a more detailed video of the app features.</a>
 
 ## Available Scripts
 
