@@ -2105,6 +2105,15 @@
       "lightRequirement": "Full sun, part shade",
       "moistureRequirement": "Moist, Wet",
       "id": 233
+    },
+    {
+      "binomialName": "Galium trifidum",
+      "commonName": "Small Bedstraw",
+      "type": "Herb",
+      "height": "1'-2'",
+      "lightRequirement": "Full sun",
+      "moistureRequirement": "Moist, wet",
+      "id": 234
     }
   ]
 }
