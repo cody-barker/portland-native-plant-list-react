@@ -2033,6 +2033,15 @@
       "lightRequirement": "Full sun, part shade",
       "moistureRequirement": "Moist",
       "id": 225
+    },
+    {
+      "binomialName": "Ribes lobbii",
+      "commonName": "Pioneer Gooseberry",
+      "type": "Shrub",
+      "height": "3'",
+      "lightRequirement": "Full sun, part shade",
+      "moistureRequirement": "Dry, Moist",
+      "id": 226
     }
   ]
 }
