@@ -4,7 +4,7 @@ import Plant from './Plant'
 function Shrubs({allPlants}) {
     
     const shrubs = allPlants.filter(plant => plant.type.toLowerCase().includes("shrub"))
-    const shrubsSorted = shrubs.sort(compare)
+    const shrubsSorted = [...shrubs].sort(compare)
     const shrubComps = shrubsSorted.map(plant => <Plant plant={plant} key={plant.id}/>)
     function compare(a, b) {
         if (a.binomialName < b.binomialName) {
