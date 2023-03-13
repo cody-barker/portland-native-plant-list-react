@@ -20,6 +20,16 @@ function App() {
 
   const [allPlants, setAllPlants] = useState([])
 
+  function compare(a, b) {
+    if (a.binomialName.toLowerCase() < b.binomialName.toLowerCase()) {
+        return -1
+    }
+    if (a.binomialName.toLowerCase() > b.binomialName.toLowerCase()) {
+        return 1
+    }
+    return 0
+}
+
   return (
     <div className="app">
       <NavBar />
@@ -31,19 +41,19 @@ function App() {
           <PlantForm allPlants={allPlants} setAllPlants={setAllPlants}/>
         </Route>
         <Route path="/allplants">
-          <AllPlants allPlants={allPlants}/>
+          <AllPlants allPlants={allPlants} compare={compare}/>
         </Route>
         <Route path="/trees">
-          <Trees allPlants={allPlants}/>
+          <Trees allPlants={allPlants} compare={compare}/>
         </Route>
         <Route path="/shrubs">
-          <Shrubs allPlants={allPlants}/>
+          <Shrubs allPlants={allPlants} compare={compare}/>
         </Route>
         <Route path="/grasses">
-          <Grasses allPlants={allPlants}/>
+          <Grasses allPlants={allPlants} compare={compare}/>
         </Route>
         <Route path="/herbs">
-          <Herbs allPlants={allPlants}/>
+          <Herbs allPlants={allPlants} compare={compare}/>
         </Route>
         <Route path="*">
           <h1>404 not found</h1>
