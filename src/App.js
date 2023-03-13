@@ -12,13 +12,13 @@ import Herbs from './Herbs'
 
 function App() {
 
+  const [allPlants, setAllPlants] = useState([])
+
   useEffect(() => {
     fetch('http://localhost:3001/plantList')
     .then(r => r.json())
     .then(list => setAllPlants(list))
   }, [])
-
-  const [allPlants, setAllPlants] = useState([])
 
   function compare(a, b) {
     if (a.binomialName.toLowerCase() < b.binomialName.toLowerCase()) {
