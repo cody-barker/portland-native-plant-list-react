@@ -15,7 +15,7 @@ function App() {
   const [allPlants, setAllPlants] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3001/plantList')
+    fetch('http://localhost:3001/plants')
     .then(r => r.json())
     .then(list => setAllPlants(list))
   }, [])
