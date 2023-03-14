@@ -6,7 +6,7 @@ function AllPlants({biSearch, comSearch, handleBiNameSearchState, handleComNameS
 
     const plantsSorted = [...allPlants].sort(compare)
     const allPlantsComps = plantsSorted.map(plant => <Plant plant={plant} key={plant.id}/>)
-    const plantSearch = plantsSorted.filter(plant => plant.binomialName.split(" ").join("").toLowerCase().includes(biSearch.toLowerCase()) && plant.commonName.split(" ").join("").toLowerCase().includes(comSearch.toLowerCase()))
+    const plantSearch = plantsSorted.filter(plant => plant.binomialName.split(" ").join("").toLowerCase().includes(biSearch.split(" ").join("").toLowerCase()) && plant.commonName.split(" ").join("").toLowerCase().includes(comSearch.split(" ").join("").toLowerCase()))
     const searchComps = plantSearch.map(plant => <Plant plant={plant} key={plant.id}/>)
     
     return(
