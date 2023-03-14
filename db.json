@@ -2008,15 +2008,6 @@
       "moistureRequirement": "Dry, Moist, Wet"
     },
     {
-      "binomialName": "Actae rubra",
-      "commonName": "Red Baneberry",
-      "type": "Shrub",
-      "height": "1'-3'",
-      "lightRequirement": "Full sun, part shade",
-      "moistureRequirement": "Moist",
-      "id": 223
-    },
-    {
       "binomialName": "Crataegus gaylussacia",
       "commonName": "Suksdorf's hawthorn",
       "type": "Tree",
@@ -2114,6 +2105,15 @@
       "lightRequirement": "Full sun",
       "moistureRequirement": "Moist, wet",
       "id": 234
+    },
+    {
+      "binomialName": "Actaea rubra",
+      "commonName": "Red Baneberry",
+      "type": "Shrub",
+      "height": "1'-3'",
+      "lightRequirement": "Full Sun, Part Shade",
+      "moistureRequirement": "Moist",
+      "id": 235
     }
   ]
 }
