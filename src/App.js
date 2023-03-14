@@ -14,6 +14,17 @@ function App() {
 
   const [allPlants, setAllPlants] = useState([])
 
+  function handleBiNameSearchState(e) {
+    setBiSearch(e.target.value)
+  }
+
+  function handleComNameSearchState(e) {
+    setComSearch(e.target.value)
+  }
+
+  const [biSearch, setBiSearch] = useState("")
+  const [comSearch, setComSearch] = useState("")
+
   useEffect(() => {
     fetch('http://localhost:3001/plants')
     .then(r => r.json())
@@ -41,7 +52,7 @@ function App() {
           <PlantForm allPlants={allPlants} setAllPlants={setAllPlants}/>
         </Route>
         <Route path="/allplants">
-          <AllPlants allPlants={allPlants} compare={compare}/>
+          <AllPlants allPlants={allPlants} compare={compare} handleBiNameSearchState={handleBiNameSearchState} handleComNameSearchState={handleComNameSearchState} biSearch={biSearch} comSearch={comSearch}/>
         </Route>
         <Route path="/trees">
           <Trees allPlants={allPlants} compare={compare}/>
