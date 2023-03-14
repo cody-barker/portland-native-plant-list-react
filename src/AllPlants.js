@@ -11,6 +11,7 @@ function AllPlants({allPlants, compare}) {
 
     const plantSearch = plantsSorted.filter(plant => plant.binomialName.split(" ").join("").toLowerCase().includes(biSearch.toLowerCase()) && plant.commonName.split(" ").join("").toLowerCase().includes(comSearch.toLowerCase()))
     //this returns everything bc of spaces counted as empty strings in the names
+    //is split and join actually working? is there still a space?
 
     const searchComps = plantSearch.map(plant => <Plant plant={plant} key={plant.id}/>)
 
@@ -36,7 +37,7 @@ function AllPlants({allPlants, compare}) {
                 <input onChange={handleBiNameSearchState} type="text" placeholder="Search by Binomial Name" value={biSearch}></input>
                 <input onChange={handleComNameSearchState} type="text" placeholder="Search by Common Name" value={comSearch}></input>
             </form>
-            {biSearch === "" ? allPlantsComps : searchComps}
+            {biSearch === "" && comSearch === ""? allPlantsComps : searchComps}
         </div>
     )
 }
