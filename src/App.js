@@ -13,6 +13,9 @@ import Herbs from './Herbs'
 function App() {
 
   const [allPlants, setAllPlants] = useState([])
+  const [biSearch, setBiSearch] = useState("")
+  const [comSearch, setComSearch] = useState("")
+  const [moistSearch, setMoistSearch] = useState("")
 
   function handleBiNameSearchState(e) {
     setBiSearch(e.target.value)
@@ -22,8 +25,9 @@ function App() {
     setComSearch(e.target.value)
   }
 
-  const [biSearch, setBiSearch] = useState("")
-  const [comSearch, setComSearch] = useState("")
+  function handleMoistSearchState(e) {
+    setMoistSearch(e.target.value)
+  }
 
   useEffect(() => {
     fetch('http://localhost:3001/plants')
@@ -52,7 +56,7 @@ function App() {
           <PlantForm allPlants={allPlants} setAllPlants={setAllPlants}/>
         </Route>
         <Route path="/allplants">
-          <AllPlants allPlants={allPlants} compare={compare} handleBiNameSearchState={handleBiNameSearchState} handleComNameSearchState={handleComNameSearchState} biSearch={biSearch} comSearch={comSearch}/>
+          <AllPlants allPlants={allPlants} compare={compare} handleBiNameSearchState={handleBiNameSearchState} handleComNameSearchState={handleComNameSearchState} biSearch={biSearch} comSearch={comSearch} moistSearch={moistSearch} handleMoistSearchState={handleMoistSearchState}/>
         </Route>
         <Route path="/trees">
           <Trees allPlants={allPlants} compare={compare} handleBiNameSearchState={handleBiNameSearchState} handleComNameSearchState={handleComNameSearchState} biSearch={biSearch} comSearch={comSearch}/>
