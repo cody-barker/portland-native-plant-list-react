@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import Plant from './Plant'
 
 function AllPlants({allPlants, compare}) {
@@ -7,21 +7,34 @@ function AllPlants({allPlants, compare}) {
     const allPlantsComps = plantsSorted.map(plant => <Plant plant={plant} key={plant.id}/>)
 
     const [biSearch, setBiSearch] = useState("")
-    const plantSearch = plantsSorted.filter(plant => plant.binomialName.toLowerCase().includes(biSearch.toLowerCase()))
+    const [comSearch, setComSearch] = useState("")
+
+    const plantSearch = plantsSorted.filter(plant => plant.binomialName.split(" ").join("").toLowerCase().includes(biSearch.toLowerCase()) && plant.commonName.split(" ").join("").toLowerCase().includes(comSearch.toLowerCase()))
+    //this returns everything bc of spaces counted as empty strings in the names
+
     const searchComps = plantSearch.map(plant => <Plant plant={plant} key={plant.id}/>)
 
-    function handleSearchState(e) {
+    function handleBiNameSearchState(e) {
         setBiSearch(e.target.value)
+    }
+
+    function handleComNameSearchState(e) {
+        setComSearch(e.target.value)
     }
 
     function handleSearch(e) {
         e.preventDefault()
     }
 
+    console.log(`biSearch: ${biSearch}`)
+    console.log(`comSearch: ${comSearch}`)
+
+
     return(
         <div>
             <form onChange={handleSearch}>
-                <input onChange={handleSearchState} type="text" placeholder="Search by Binomial Name" value={biSearch}></input>
+                <input onChange={handleBiNameSearchState} type="text" placeholder="Search by Binomial Name" value={biSearch}></input>
+                <input onChange={handleComNameSearchState} type="text" placeholder="Search by Common Name" value={comSearch}></input>
             </form>
             {biSearch === "" ? allPlantsComps : searchComps}
         </div>
