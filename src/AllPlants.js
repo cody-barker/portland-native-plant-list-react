@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Plant from './Plant'
 import Search from './Search'
 
