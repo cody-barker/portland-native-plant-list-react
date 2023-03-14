@@ -64,7 +64,7 @@ function App() {
           <Grasses allPlants={allPlants} compare={compare} handleBiNameSearchState={handleBiNameSearchState} handleComNameSearchState={handleComNameSearchState} biSearch={biSearch} comSearch={comSearch}/>
         </Route>
         <Route path="/herbs">
-          <Herbs allPlants={allPlants} compare={compare}/>
+          <Herbs allPlants={allPlants} compare={compare} handleBiNameSearchState={handleBiNameSearchState} handleComNameSearchState={handleComNameSearchState} biSearch={biSearch} comSearch={comSearch}/>
         </Route>
         <Route path="*">
           <h1>404 not found</h1>
