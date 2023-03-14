@@ -61,7 +61,7 @@ function App() {
           <Shrubs allPlants={allPlants} compare={compare} handleBiNameSearchState={handleBiNameSearchState} handleComNameSearchState={handleComNameSearchState} biSearch={biSearch} comSearch={comSearch}/>
         </Route>
         <Route path="/grasses">
-          <Grasses allPlants={allPlants} compare={compare}/>
+          <Grasses allPlants={allPlants} compare={compare} handleBiNameSearchState={handleBiNameSearchState} handleComNameSearchState={handleComNameSearchState} biSearch={biSearch} comSearch={comSearch}/>
         </Route>
         <Route path="/herbs">
           <Herbs allPlants={allPlants} compare={compare}/>
