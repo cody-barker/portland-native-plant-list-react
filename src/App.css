@@ -60,7 +60,9 @@ button[type=submit]{
 }
 
 .plant-card {
-  display: block;
+  display: inline-block;
+  height: auto;
+  width: 300px;
   margin: 10px;
   border: 2px solid #5c5c5c;
   border-radius: 0.25em;
