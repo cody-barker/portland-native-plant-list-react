@@ -43,7 +43,7 @@ function PlantForm({allPlants, setAllPlants}) {
             lightRequirement: lightRequirement,
             moistureRequirement: moistureRequirement
         }
-        fetch('http://localhost:3001/plantList', {
+        fetch('http://localhost:3001/plants', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -60,10 +60,11 @@ function PlantForm({allPlants, setAllPlants}) {
             setLightRequirement(""),
             setMoistureRequirement("")
         )
+        .catch(error => alert(error))
     }
 
     return(
-        <form autocomplete="off" onSubmit={handleSubmit}>
+        <form autoComplete="off" onSubmit={handleSubmit}>
             <h3>Submit a New Plant to the List</h3>
             <input required onChange={handleBinomialChange} type="text" name="binomialName" placeholder="Binomial Name" value={binomialName}></input>
             <input required onChange={handleCommonChange} type="text" name="commonName" placeholder="A Common Name" value={commonName}></input>
