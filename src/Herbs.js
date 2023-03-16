@@ -7,7 +7,7 @@ function Herbs({allPlants, compare, biSearch, comSearch, handleBiNameSearchState
     const herbs = allPlants.filter(plant => plant.type.toLowerCase().includes("herb"))
     const herbsSorted = [...herbs].sort(compare)
     const herbComps = herbsSorted.map(plant => <Plant plant={plant} key={plant.id}/>)
-    const herbSearch = herbsSorted.filter(plant => plant.binomialName.split(" ").join("").toLowerCase().includes(biSearch.toLowerCase()) && plant.commonName.split(" ").join("").toLowerCase().includes(comSearch.toLowerCase()))
+    const herbSearch = herbsSorted.filter(plant => plant.binomialName.split(" ").join("").toLowerCase().includes(biSearch.split(" ").join("").toLowerCase()) && plant.commonName.split(" ").join("").toLowerCase().includes(comSearch.split(" ").join("").toLowerCase()))
     const searchComps = herbSearch.map(plant => <Plant plant={plant} key={plant.id}/>)
 
     return(
