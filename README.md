@@ -29,8 +29,10 @@ You may also see any lint errors in the console.
 Runs a local json server to host the plant list data.\
 Open [http://localhost:3001/plantlist](http://localhost:3001/plantlist) to view it in your browser.
 
-## Support
+## For Contributors
 If you'd like to contribute to the database, you may fork this repo and submit your changes for approval to codybarker.or@gmail.com
+
+##Support
 e: codybarker.or@gmail.com
 
 ## Project Status
