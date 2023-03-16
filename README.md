@@ -14,8 +14,6 @@ The site allows you to search for and add plants to the database, as well as vie
 
 ## Available Scripts
 
-If you'd like to contribute to the database, you may fork this repo and submit your changes for approval to codybarker.or@gmail.com
-
 In the project directory, you can run:
 
 ### `npm start`
@@ -32,6 +30,7 @@ Runs a local json server to host the plant list data.\
 Open [http://localhost:3001/plantlist](http://localhost:3001/plantlist) to view it in your browser.
 
 ## Support
+If you'd like to contribute to the database, you may fork this repo and submit your changes for approval to codybarker.or@gmail.com
 e: codybarker.or@gmail.com
 
 ## Project Status
