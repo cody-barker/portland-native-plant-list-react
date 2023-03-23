@@ -1,5 +1,4 @@
 import React from 'react'
-import NewComp from './NewComp'
 
 function Home() {
     return(
