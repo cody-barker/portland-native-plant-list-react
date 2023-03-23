@@ -78,6 +78,6 @@ h2#latin {
 }
 
 #background {
-  width: 500%;
+  width: inherit;
   margin-top: 20px;
 }
