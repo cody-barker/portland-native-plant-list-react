@@ -43,7 +43,7 @@ function PlantForm({allPlants, setAllPlants}) {
             lightRequirement: lightRequirement,
             moistureRequirement: moistureRequirement
         }
-        fetch('http://localhost:3001/plants', {
+        fetch('https://plant-list-db.onrender.com', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

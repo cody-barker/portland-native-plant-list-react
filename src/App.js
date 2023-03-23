@@ -25,7 +25,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetch('http://localhost:3001/plants')
+    fetch('https://plant-list-db.onrender.com')
     .then(r => r.json())
     .then(list => setAllPlants(list))
   }, [])
