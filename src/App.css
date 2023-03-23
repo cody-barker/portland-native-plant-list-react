@@ -78,6 +78,6 @@ h2#latin {
 }
 
 #background {
-  background-size: auto;
+  width: auto;
   margin-top: 20px;
 }
